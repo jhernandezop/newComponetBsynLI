@@ -1,0 +1,99 @@
+{
+    "display": "form",
+    "components": [
+        {
+            "label": "Seleccione",
+            "mask": false,
+            "tableView": true,
+            "alwaysEnabled": false,
+            "type": "select",
+            "input": true,
+            "key": "seleccione",
+            "validate": {
+                "select": false,
+                "customMessage": "",
+                "json": ""
+            },
+            "conditional": {
+                "show": "false",
+                "when": "comentarios",
+                "json": "",
+                "eq": "derivarAlAreaDeVentas,"
+            },
+            "data": {
+                "values": [
+                    {
+                        "label": "Derivar al área de ventas",
+                        "value": "derivarAlAreaDeVentas"
+                    },
+                    {
+                        "label": "Finalizar cotización",
+                        "value": "finalizarCotizacion"
+                    }
+                ]
+            },
+            "valueProperty": "value",
+            "selectThreshold": 0.3,
+            "encrypted": false,
+            "properties": {},
+            "customConditional": "",
+            "logic": [],
+            "attributes": {},
+            "lazyLoad": false,
+            "selectValues": "",
+            "disableLimit": false,
+            "sort": "",
+            "reference": false,
+            "defaultValue": "",
+            "reorder": false
+        },
+        {
+            "label": "Comentarios",
+            "autoExpand": false,
+            "isUploadEnabled": false,
+            "showWordCount": false,
+            "showCharCount": false,
+            "tableView": true,
+            "alwaysEnabled": false,
+            "type": "textarea",
+            "input": true,
+            "key": "comentarios",
+            "defaultValue": "",
+            "validate": {
+                "customMessage": "",
+                "json": ""
+            },
+            "conditional": {
+                "show": "true",
+                "when": "seleccione",
+                "json": "",
+                "eq": "derivarAlAreaDeVentas"
+            },
+            "inputFormat": "plain",
+            "encrypted": false,
+            "properties": {},
+            "customConditional": "",
+            "logic": [],
+            "attributes": {},
+            "uploadUrl": "",
+            "uploadOptions": "",
+            "uploadDir": "",
+            "reorder": false
+        },
+        {
+            "type": "button",
+            "label": "Submit",
+            "key": "submit",
+            "disableOnInvalid": true,
+            "theme": "primary",
+            "input": true,
+            "tableView": true
+        }
+    ],
+    "settings": {
+        "pdf": {
+            "id": "1ec0f8ee-6685-5d98-a847-26f67b67d6f0",
+            "src": "https://files.form.io/pdf/5692b91fd1028f01000407e3/file/1ec0f8ee-6685-5d98-a847-26f67b67d6f0"
+        }
+    }
+}
