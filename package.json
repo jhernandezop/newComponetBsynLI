@@ -6,7 +6,7 @@
   "private": true,
   "devDependencies": {
     "electron": "^1.4.15",
-    "electron-builder": "^13.6.0",
+    "electron-builder": "^23.6.0",
     "foreman": "^2.0.0",
     "react-scripts": "^0.9.0"
   },
